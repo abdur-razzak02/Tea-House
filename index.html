@@ -12,45 +12,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- tailwindcss -->
+    <!-- tailwindcss cdn-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- main css -->
     <link rel="stylesheet" href="main.css" />
     <!-- fav icon -->
     <link rel="shortcut icon" href="images/banner.png" type="image/x-icon" />
-    
   </head>
-  <body>
+  <body class="bg-whit dark:bg-gray-900 dark:text-white max-w-screen-xl m-auto">
     <main>
-      <section id="banner" class="md:max-xl:flex">
-        <div
-          class="banner-container flex flex-col p-10 mb-10 bg-white dark:bg-slate-600"
-        >
-          <div class="banner-text mb-5">
-            <h1 class="text-[42px] leading-tight font-semibold">
+      <section id="banner">
+        <div class="banner-container flex flex-col p-10 mb-10 lg:flex-row">
+          <div class="banner-text mb-5 lg:content-center lg:w-[50%]">
+            <input
+              type="checkbox"
+              value="synthwave"
+              class="toggle theme-controller"
+            />
+            <h1 class="text-[42px] leading-tight font-semibold lg:text-7xl mt-3">
               It's good <br />
               tea time at the <br />
               Tea House
             </h1>
-            <p class="my-5 text-gray-500 w-[60%] text-base">
+            <p
+              class="my-5 text-gray-500 w-[60%] text-base lg:text-2xl lg:w-[100%]"
+            >
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
             <button
               class="flex p-3 rounded-md bg-gradient-to-r from-orange-400 to-orange-600 items-center"
             >
-              <span class="mr-2 text-white font-semibold">Explore more</span>
+              <span class="mr-2 text-white font-semibold lg:text-2xl"
+                >Explore more</span
+              >
               <img
                 src="images/arrow.png"
-                class="w-4 items-center"
+                class="w-4 items-center lg:w-5"
                 alt="arrow icon"
               />
-            </button>
+            </button>            
           </div>
-          <div class="banner-image">
+          <div class="banner-image lg:w-[50%]">
             <img src="images/banner.png" alt="" class="relative" />
             <div
-              class="bg-white drop-shadow-2xl flex gap-3 absolute p-3 rounded-lg bottom-10 left-16"
+              class="bg-white dark:bg-gray-800 drop-shadow-2xl flex gap-3 absolute p-3 rounded-lg bottom-10 left-16 lg:hidden"
             >
               <i
                 class="fa-solid fa-star text-orange-500 center text-3xl flex items-center"
@@ -64,9 +77,9 @@
         </div>
       </section>
 
-      <section id="cards" class="px-10 mb-32">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold mb-5">Our Featured Products</h1>
+      <section id="cards" class="px-10 pb-12">
+        <div class="text-center lg:w-[70%] lg:m-auto">
+          <h1 class="text-4xl font-bold pb-5">Our Featured Products</h1>
           <p class="text-gray-500 px-5 mb-5">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
@@ -74,9 +87,9 @@
             believable.
           </p>
         </div>
-        <div class="card-container">
+        <div class="card-container lg:flex gap-5">
           <div
-            class="bg-slate-50 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
           >
             <img src="images/tea-1.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Lemon Tea</h1>
@@ -85,7 +98,7 @@
             </p>
           </div>
           <div
-            class="bg-slate-50 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
           >
             <img src="images/tea-2.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Milk Shake</h1>
@@ -94,7 +107,7 @@
             </p>
           </div>
           <div
-            class="bg-slate-50 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
           >
             <img src="images/tea-3.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Oreo Shake</h1>
@@ -103,7 +116,7 @@
             </p>
           </div>
           <div
-            class="bg-slate-50 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
           >
             <img src="images/tea-4.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Black Tea</h1>
