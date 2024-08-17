@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- FontAwesome cdn -->
     <link
       rel="stylesheet"
@@ -20,30 +27,35 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- main css -->
     <link rel="stylesheet" href="main.css" />
     <!-- fav icon -->
     <link rel="shortcut icon" href="images/banner.png" type="image/x-icon" />
   </head>
-  <body class="bg-whit dark:bg-gray-900 dark:text-white max-w-screen-xl m-auto">
+
+  <body class="max-w-screen-xl m-auto">
     <main>
+      <!-- main banner -->
       <section id="banner">
         <div class="banner-container flex flex-col p-10 mb-10 lg:flex-row">
-          <div class="banner-text mb-5 lg:content-center lg:w-[50%]">
-            <input
-              type="checkbox"
-              value="synthwave"
-              class="toggle theme-controller"
-            />
-            <h1 class="text-[42px] leading-tight font-semibold lg:text-7xl mt-3">
+          <div class="banner-text mb-5 lg:content-center lg:w-1/2">
+            <div class="flex gap-3">
+              <span class="text-xl font-semibold">Dark Mood</span>
+              <input
+                type="checkbox"
+                value="synthwave"
+                class="toggle theme-controller"
+              />
+            </div>
+
+            <h1
+              class="text-[42px] leading-tight font-semibold lg:text-7xl mt-3 font-manrope"
+            >
               It's good <br />
               tea time at the <br />
               Tea House
             </h1>
-            <p
-              class="my-5 text-gray-500 w-[60%] text-base lg:text-2xl lg:w-[100%]"
-            >
+            <p class="my-5 text-gray-500 w-1/2 text-base lg:text-2xl lg:w-full">
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
@@ -58,18 +70,21 @@
                 class="w-4 items-center lg:w-5"
                 alt="arrow icon"
               />
-            </button>            
+            </button>
           </div>
-          <div class="banner-image lg:w-[50%]">
-            <img src="images/banner.png" alt="" class="relative" />
+
+          <div class="relative">
+            <div class="banner-image">
+              <img src="images/banner.png" alt="" />
+            </div>
             <div
-              class="bg-white dark:bg-gray-800 drop-shadow-2xl flex gap-3 absolute p-3 rounded-lg bottom-10 left-16 lg:hidden"
+              class="bg-white dark:bg-gray-800 drop-shadow-2xl flex gap-3 absolute p-3 sm:p-5 rounded-lg bottom-0 left-16 sm:bottom-3 sm:left-52 xl:left-44 xl:bottom-0"
             >
               <i
-                class="fa-solid fa-star text-orange-500 center text-3xl flex items-center"
+                class="fa-solid fa-star text-amber-500 center text-3xl flex items-center"
               ></i>
               <div>
-                <h1 class="font-semibold text-xl">5.00</h1>
+                <h1 class="font-bold text-2xl">5.00</h1>
                 <p class="text-gray-500">Trust Pilot Ratings</p>
               </div>
             </div>
@@ -77,8 +92,9 @@
         </div>
       </section>
 
+      <!-- Featured Products -->
       <section id="cards" class="px-10 pb-12">
-        <div class="text-center lg:w-[70%] lg:m-auto">
+        <div class="text-center lg:w-3/4 lg:m-auto">
           <h1 class="text-4xl font-bold pb-5">Our Featured Products</h1>
           <p class="text-gray-500 px-5 mb-5">
             There are many variations of passages of Lorem Ipsum available, but
@@ -87,9 +103,10 @@
             believable.
           </p>
         </div>
-        <div class="card-container lg:flex gap-5">
+
+        <div class="card-container grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
           <div
-            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-xl rounded-lg flex flex-col items-center p-5"
           >
             <img src="images/tea-1.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Lemon Tea</h1>
@@ -98,7 +115,7 @@
             </p>
           </div>
           <div
-            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-xl rounded-lg flex flex-col items-center p-5"
           >
             <img src="images/tea-2.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Milk Shake</h1>
@@ -107,7 +124,7 @@
             </p>
           </div>
           <div
-            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-xl rounded-lg flex flex-col items-center p-5"
           >
             <img src="images/tea-3.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Oreo Shake</h1>
@@ -116,13 +133,38 @@
             </p>
           </div>
           <div
-            class="bg-slate-50 dark:bg-gray-800 drop-shadow-lg rounded-lg flex flex-col items-center p-5 mb-8"
+            class="bg-slate-50 dark:bg-gray-800 drop-shadow-xl rounded-lg flex flex-col items-center p-5"
           >
             <img src="images/tea-4.png" alt="" class="mb-5" />
             <h1 class="text-3xl font-bold mb-2">Black Tea</h1>
             <p class="text-center text-xl text-gray-500">
               Creamer could be replaced by fresh milk
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- great tea section -->
+      <section class="xl:mt-20 sm:mt-10 mb-80">
+        <!-- container -->
+        <div class="px-10 sm:flex gap-10">
+          <!-- images -->
+          <div class="sm:w-5/12 grid grid-cols-2 grid-rows-3 gap-5">
+            <div class="bg-gradient-to-r from-pink-100 to-pink-50 rounded-2xl"></div>
+            <div class="bg-[#E6A6231A] row-span-2 rounded-2xl p-3 xl:p-5 content-center"><img src="images/fresh-1.png" alt=""></div>
+            <div class="rounded-2xl bg-[#5776391A] row-span-2 p-6 sm:p-3 xl:p-8 content-center"><img src="images/fresh-2.png" alt=""></div>
+            <div class="bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF] rounded-2xl"></div>
+          </div>
+          <!-- texts -->
+          <div class="sm:w-7/12 mt-8 sm:mt-0 sm:flex sm:flex-col sm:justify-center">
+            <h1 class="text-4xl xl:text-5xl font-bold mb-5 xl:w-3/4">Great Tea, Freshly Presented</h1>
+          <p class="text-gray-500 mb-5">
+            The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.
+          </p>
+          <h2 class="text-2xl font-semibold mb-2">Unique Taste</h2>
+          <p class="text-gray-500 mb-3 xl:w-3/5">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+          <h2 class="text-2xl font-semibold mb-2">Premium Quality</h2>
+          <p class="xl:w-3/5">Premium Quality that makes tea more elegant and more durable when you use it.</p>
           </div>
         </div>
       </section>

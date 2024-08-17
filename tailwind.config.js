@@ -3,7 +3,12 @@ module.exports = {
   content: ['*'],
   darkMode: 'media',
   theme: {
-    extend: {},
+    fontFamily: {
+      'manrope': ['Manrope", sans-serif']
+    },
+    extend: {
+
+    },
   },
   plugins: [],
 }
